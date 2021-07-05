@@ -140,11 +140,12 @@ let package = Package(
       url: "https://github.com/apple/swift-protobuf.git",
       "1.15.0" ..< "2.0.0"
     ),
-    .package(
-      name: "GoogleAppMeasurement",
-      url: "https://github.com/google/GoogleAppMeasurement.git",
-      .exact("8.3.0")
-    ),
+//     .package(
+//       name: "GoogleAppMeasurement",
+//       url: "https://github.com/google/GoogleAppMeasurement.git",
+//       .exact("8.3.0")
+//     ),
+    .package(name: "GoogleAppMeasurement", url: "https://github.com/google/GoogleAppMeasurement", .branch("main")),
     .package(
       name: "GoogleDataTransport",
       url: "https://github.com/google/GoogleDataTransport.git",
